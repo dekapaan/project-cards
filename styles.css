@@ -29,6 +29,9 @@ h1 {
 .project-card {
   background: rgb(26, 26, 26);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  -moz-backdrop-filter: blur(11.5px);
   border-radius: 4px;
   flex: 0 1 150px;
   width: 50%;
@@ -68,4 +71,13 @@ a {
 a:hover {
   background: teal;
   color: black;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 20px;
+  }
+  .project-card {
+    margin-right: 0;
+    margin-left: 5px;
+  }
 }
